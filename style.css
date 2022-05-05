@@ -1,0 +1,147 @@
+/* 練習： 卡片製作 */
+body{   
+    background-color: #eeeeee; 
+    /* 背景色flatuicolors.com */
+    font-family: Microsoft YaHei;
+    /* 微軟雅黑體（Microsoft YaHei） */
+
+    /* font-family: Microsoft JhengHei; */
+    /* 微軟正黑體（Microsoft JhengHei） */
+
+  }
+
+  .card{    
+    background-color: #fff;
+    width: 450px;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    /* 右偏10px 下偏10px 擴散30px 黑色透明度0.3 */
+    position:absolute;
+    /* 只做上面這個設定的話，會變成名片左上角在網頁政中央 */
+    /* margin: auto; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* XY軸各往回推一半 */
+  }
+
+  /* =================================================== */
+
+  .top{
+    /* background-color: #pink; 
+    先設的輔助色塊範圍，後面可以拿掉  */
+    color: #1D7FAA;
+    width: 410px;
+    /* 450-回推20-回推20=410 */
+    /* width: 100%; */
+    /* 設定跟隨父層card的百分比（html那裡的）*/
+    /* height:200px; */
+    margin-left: 20px;
+    margin-top: 35px;
+    /* 不要用padding，後面其他設定會有問題 */
+  }
+
+  .top p{
+      font-size: 20px;
+      border-bottom: 2px solid #1D7FAA;
+      /* border: 2px solid #1D7FAA; */
+  }
+
+/* ================================================== */
+
+.mid{
+    /* background-color: pink; */
+    width: 410px; 
+    margin-left: 20px; 
+    font-size: 14px;
+}  
+
+/* ----------------------------------------------- */
+
+.name,.contact{
+    display: inline-block; 
+    vertical-align: top;
+    margin-left: 20px; 
+}
+
+/* ------------------------------------------------- */
+
+.name{ 
+    background-color: #fff;
+    /* 區塊輔助顏色，用完拿掉 */
+    margin-top: 35px;  
+}
+
+.name p{
+    /* background-color: yellow; */
+    /* 區塊輔助顏色，用完拿掉 */
+    margin: 0;
+    /* 邊界設0，名字就會在黃色塊中央，白色邊界消失 */
+    font-weight: bold;
+}
+
+/* -------------------------------------------- */
+
+.chinese{
+    /* border: 1px dashed black; */
+    /* 區塊輔助顏色，用完拿掉 */
+    font-size: 18px;
+}
+
+.chinese span{
+    font-size: 12px
+}
+
+.eng{
+    /* border: 1px dashed black; */
+    /* 區塊輔助顏色，用完拿掉 */
+    font-size: 10px;   
+}
+
+/* ------------------------------------------------- */
+
+.contact{
+    /* border: 1px dashed black; */
+    /* 區塊輔助顏色，用完拿掉 */
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 15px;
+    line-height: 19px;
+    /* line-height 是每一行的間距 */
+}
+
+.contact p{
+    /* border: 1px dashed black; */
+    /* 區塊輔助顏色，用完拿掉 */
+    margin-bottom: 0;
+}
+
+/* =================================================== */
+
+
+.bot{
+    background-color: #1D7FAA;
+    width: 100%;
+    height: 70px ;
+    position: absolute;
+    /* 絕對位置在卡片body內，才不會超出去 */
+    bottom: 0px;
+    /* 跟父層底部一致 */
+    border-radius: 0 0 10px 10px ;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    /* 以框線為主，色塊才不會跑出去右邊 */
+}
+
+/* --------------------------------------------- */
+
+.bot p{
+    /* border: 1px dashed black; */
+    /* 區塊輔助顏色，用完拿掉 */
+    font-size: 14px;
+    margin: 0 0 0 20px;
+    padding-top: 5px;
+}
+
